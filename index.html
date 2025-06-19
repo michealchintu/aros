@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROS Events - Professional Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Intro Animation Overlay -->
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="intro-container">
+            <div class="letter-container">
+                <div class="letter" data-letter="A" data-image="a-image.jpg">
+                    <span>A</span>
+                </div>
+                <div class="letter" data-letter="R" data-image="r-image.jpg">
+                    <span>R</span>
+                </div>
+                <div class="letter" data-letter="O" data-image="o-image.jpg">
+                    <span>O</span>
+                </div>
+                <div class="letter" data-letter="S" data-image="s-image.jpg">
+                    <span>S</span>
+                </div>
+            </div>
+            <div class="events-text">
+                <span>Events</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AROS Events</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Slideshow Background -->
+        <div class="hero-slideshow">
+            <div class="slide active">
+                <div class="slide-image" style="background-image: url('intimate-gathering.jpg.jpeg')"></div>
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('grand-celebration.jpg.webp')"></div>
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('vision-life.jpg.webp')"></div>
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('precision-creativity.jpg.jpeg')"></div>
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <!-- Slideshow Navigation Dots -->
+        <div class="slideshow-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Creating Unforgettable Events</h1>
+            <p class="hero-subtitle" id="hero-subtitle">From intimate gatherings to grand celebrations, we bring your vision to life with precision, creativity, and excellence.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>500+ Events</h3>
+                <p>Successfully managed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About AROS Events</h2>
+                <p>Your trusted partner in creating extraordinary experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Why Choose Us?</h3>
+                    <p>With over 5 years of experience in the event management industry, we specialize in creating memorable experiences that exceed expectations. Our team of passionate professionals works tirelessly to ensure every detail is perfect.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h4>Excellence</h4>
+                            <p>We never compromise on quality</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Punctuality</h4>
+                            <p>Always on time, every time</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Passion</h4>
+                            <p>We love what we do</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Professional Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive event management solutions for every occasion</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Weddings</h3>
+                    <p>From intimate ceremonies to grand celebrations, we make your special day perfect in every detail.</p>
+                    <ul>
+                        <li>Venue selection</li>
+                        <li>Vendor coordination</li>
+                        <li>Timeline management</li>
+                        <li>Day-of coordination</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional corporate events that impress clients and motivate employees.</p>
+                    <ul>
+                        <li>Conference planning</li>
+                        <li>Team building events</li>
+                        <li>Product launches</li>
+                        <li>Annual meetings</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Private Parties</h3>
+                    <p>Birthdays, anniversaries, and special celebrations that create lasting memories.</p>
+                    <ul>
+                        <li>Theme development</li>
+                        <li>Entertainment booking</li>
+                        <li>Catering coordination</li>
+                        <li>Decoration design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Special Occasions</h3>
+                    <p>Graduations, reunions, and milestone celebrations that deserve special attention.</p>
+                    <ul>
+                        <li>Custom planning</li>
+                        <li>Budget management</li>
+                        <li>Guest coordination</li>
+                        <li>Photography/videography</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Showcasing our most memorable events</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-heart"></i>
+                            <p>Elegant Wedding</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Sarah & Michael's Wedding</h3>
+                        <p>A beautiful garden wedding with 200 guests</p>
+                        <span class="category">Wedding</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-briefcase"></i>
+                            <p>Corporate Conference</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>TechCorp Annual Conference</h3>
+                        <p>500+ attendees, 3-day event</p>
+                        <span class="category">Corporate</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                            <p>Birthday Celebration</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Emma's Sweet 16</h3>
+                        <p>Magical themed birthday party</p>
+                        <span class="category">Private Party</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>Graduation Ceremony</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>University Graduation</h3>
+                        <p>Formal ceremony with reception</p>
+                        <span class="category">Special Occasion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real feedback from satisfied clients</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"AROS Events made our wedding day absolutely perfect. Every detail was taken care of, and we could truly enjoy our special day without any stress."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Bride</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The corporate event they organized for us exceeded all expectations. Professional, efficient, and the feedback from our team was outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>David Chen</h4>
+                            <span>CEO, TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"My daughter's birthday party was magical! The team went above and beyond to create an unforgettable experience for everyone."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <span>Parent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start planning your perfect event?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@arosevents.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Event Street, City, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Event Type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="private">Private Party</option>
+                                <option value="special">Special Occasion</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Event Date">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your event" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AROS Events</h3>
+                    <p>Creating unforgettable experiences, one event at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Weddings</li>
+                        <li>Corporate Events</li>
+                        <li>Private Parties</li>
+                        <li>Special Occasions</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+1 (555) 123-4567</p>
+                    <p>info@arosevents.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AROS Events. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
